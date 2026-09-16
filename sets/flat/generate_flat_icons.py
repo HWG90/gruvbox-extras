@@ -76,7 +76,6 @@ RIM_PATH = ("M 165.068 11.951 C 169.396 11.941 173.724 11.991 178.052 12.089 C 1
 GAMES = [
     ("beyond-citadel", 3371240, "#b8bb26", "logo"),
     ("dead-space",     1693980, "#8ec07c", "logo"),
-    ("doom-64",        1148590, "#fe8019", "logo"),
     ("hades-ii",       1145350, "#d3869b", "icon"),
     ("helldivers-2",   553850,  "#fabd2f", "hd2"),
     ("metal-gear-rising-revengeance", 235460, "#fb4934", "logo"),

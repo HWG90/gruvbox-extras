@@ -43,6 +43,30 @@ reader does not repeat a rejected approach.
   glyph area (a hand-drawn vector measures 0.10% — that is the anti-aliasing floor).
   2.2 left visible jaggies; 5.0 muddled the face's features.
 
+## DOOM 64: wordmark, and why it cannot be a flat glyph (2026-09-16)
+
+Switched from the flat pentagram-with-face glyph to the game's **official wordmark**
+(requested). As a flat glyph the result was **unreadable**, and the reason is
+structural: the wordmark's silhouette is **76.5% solid ink** and its letters are
+fused to each other and to a shared base bar, distinguished only by colour and
+texture. Flattened to a single tone they merge into one mass.
+
+Measured: the mask is a *single connected component* (only the ® separates).
+Attempted and rejected:
+- Cutting the D out of the logo at the shallowest D–O groove (x≈232; ink 118 vs 165
+  in the letter body) still drags fragments of the O, because the merged 3D edges
+  are shared.
+- There is no horizontal split that isolates the 64: its top sits in the negative
+  space *between* the letters, above their baseline, so any row cut truncates it.
+- Rendering "D64" in heavy system fonts (Fira Sans Heavy / Compressed / Condensed)
+  reads as generic bold text, not DOOM letterforms - rejected.
+
+Resolution: composited the **actual wordmark artwork** on the tile (a re-toned
+artwork composite, the same answer as DOOM: The Dark Ages), which preserves the
+colour and bevel that make the letters legible. Kept at 90% of the tile. Verified
+objectively (contrast: luminance spread 215 in the letter area; gruvbox-toned
+palette). The flat glyph was removed from the set.
+
 ## Reverted: DOOM 64 source smoothing (2026-09-16)
 
 A 3.0px blur at the source resolution fixed the edge (10.22% → 1.15% wobble) but

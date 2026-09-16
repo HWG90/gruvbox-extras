@@ -16,13 +16,15 @@ Flat single-tone glyphs on a shared dark tile. The tile geometry (inset path,
 corner radius, gradient, hairline rim ring) is copied verbatim from the user's own
 reference icon, `Gruvbox-Plus-Dark/apps/scalable/quake.svg` — not eyeballed.
 
-16 launchers on the desktop; 15 come from this generator, plus one composite:
+16 launchers on the desktop; 14 come from this generator, plus two composites
+(built by `make_composite_icons.py` for marks whose artwork cannot survive
+flattening to a single tone):
 
 | Launcher | appid | Accent | Glyph source |
 |---|---|---|---|
 | beyond-citadel | 3371240 | `#b8bb26` | wordmark |
 | dead-space | 1693980 | `#8ec07c` | wordmark |
-| doom-64 | 1148590 | `#fe8019` | icon art **via alpha silhouette**, eye sockets cut as negative space |
+| doom-64 | 1148590 | — | **not a flat glyph**: the official wordmark artwork composited on the tile |
 | hades-ii | 1145350 | `#d3869b` | icon art |
 | helldivers-2 | 553850 | `#fabd2f` | user's own `hd2.svg` |
 | metal-gear-rising-revengeance | 235460 | `#fb4934` | wordmark |
@@ -60,7 +62,8 @@ python3 sets/flat/apply_flat.py                                     # rewrites I
 ### Layout
 
 ```
-sets/flat/          the live flat set: generator, apply script, 15 SVGs, the TDA composite PNG
+sets/flat/          the live flat set: generator, apply script, 14 SVGs, and the two
+                    composite PNGs (DOOM: TDA crest, DOOM 64 wordmark)
 sets/recolor/       earlier duotone re-tone of the installed icons (PNG), superseded
 sets/monogram-v1/   first attempt: gruvbox monogram tiles, superseded
 desktop/            the .desktop launchers as applied, for the record

@@ -2,7 +2,7 @@
 Name=DOOM 64
 Comment=Play this game on Steam
 Exec=steam steam://rungameid/1148590
-Icon=/home/goose/.local/share/icons/gruvbox-flat/doom-64.svg
+Icon=/home/goose/.local/share/icons/gruvbox-flat/doom-64-wordmark.png
 Terminal=false
 Type=Application
 Categories=Game;
