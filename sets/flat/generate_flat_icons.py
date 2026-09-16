@@ -315,8 +315,11 @@ TRACE_LT = {
 TRACE_LT_DEFAULT = 3.5
 
 SMOOTH = {
-    1148590: ("src", 3.0),     # DOOM 64 (128px source: 2.2 left visible jaggies,
-                               #  5.0 muddles the face - 3.0 is the balance)
+    # DOOM 64 is deliberately NOT smoothed at the source: this mark is detailed
+    # artwork (a horned face inside a pentagram), and any source-scale blur strong
+    # enough to calm its edge destroys the horns, eyes and mouth. Its residual edge
+    # wobble is accepted in exchange for keeping the mark readable.
+
     2183900: ("fine", 12),     # Space Marine 2
 }
 

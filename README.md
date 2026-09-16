@@ -88,9 +88,13 @@ Rollback: copy them back and re-run the two commands above.
 - **Do not decide mask polarity by area.** "Invert if the subject exceeds 50%"
   flipped DOOM: TDA's mask onto the icon's black margin, producing a black square
   with a hollow centre.
-- **A low-res source needs smoothing at the SOURCE scale**, before any upscale:
-  DOOM 64's 128px art is upscaled 8x, so its edge followed the source's pixel grid
-  (10.2% of glyph area wobbled; 1.15% after a 3.0px source-scale blur).
+- **A low-res source can be smoothed at the SOURCE scale before any upscale — but
+  only when the mark is bold and simple.** DOOM 64's 128px art is upscaled 8x, so
+  its edge follows the source's pixel grid (~10% of glyph area wobbles). A 3.0px
+  source blur fixed that (1.15%) yet **destroyed the mark**: it is detail-rich
+  artwork (a horned face inside a pentagram), and the horns, eyes and mouth melted
+  away. That smoothing was reverted and the wobble accepted — an unreadable mark is
+  worse than a rough edge. See `CHANGELOG.md`.
 - **vtracer's `length_threshold` defaults to 3.5**, which makes the path follow
   every pixel-level wobble of the mask — that rasterises as jaggedness on a curve.
 - **At the desktop's 256px icon size, ~0.10% edge deviation is just
