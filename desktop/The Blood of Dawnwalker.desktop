@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=The Blood of Dawnwalker
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/3751260
+Icon=/home/goose/.local/share/icons/gruvbox-flat/the-blood-of-dawnwalker.svg
+Terminal=false
+Type=Application
+Categories=Game;

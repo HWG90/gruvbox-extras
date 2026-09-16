@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=DOOM: The Dark Ages
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/3017860
+Icon=/home/goose/.local/share/icons/gruvbox-flat/doom-the-dark-ages-shield.png
+Terminal=false
+Type=Application
+Categories=Game;

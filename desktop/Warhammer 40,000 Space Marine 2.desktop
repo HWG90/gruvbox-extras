@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Warhammer 40,000: Space Marine 2
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/2183900
+Icon=/home/goose/.local/share/icons/gruvbox-flat/warhammer-40-000-space-marine-2.svg
+Terminal=false
+Type=Application
+Categories=Game;

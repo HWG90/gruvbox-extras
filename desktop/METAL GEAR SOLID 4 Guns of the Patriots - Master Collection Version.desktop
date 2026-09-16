@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=METAL GEAR SOLID 4: Guns of the Patriots - Master Collection Version
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/2492670
+Icon=/home/goose/.local/share/icons/gruvbox-flat/metal-gear-solid-4-guns-of-the-patriots-master-collection-version.svg
+Terminal=false
+Type=Application
+Categories=Game;

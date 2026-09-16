@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=ULTRAKILL
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/1229490
+Icon=/home/goose/.local/share/icons/gruvbox-flat/ultrakill.svg
+Terminal=false
+Type=Application
+Categories=Game;

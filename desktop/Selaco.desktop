@@ -1,0 +1,18 @@
+[Desktop Entry]
+Categories=Game;
+Comment[en_US]=Play this game on Steam
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/1592280
+GenericName[en_US]=
+GenericName=
+Icon=/home/goose/.local/share/icons/gruvbox-flat/selaco.svg
+MimeType=
+Name[en_US]=Selaco
+Name=Selaco
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

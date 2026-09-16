@@ -1,0 +1,18 @@
+[Desktop Entry]
+Categories=Game;
+Comment[en_US]=Play this game on Steam
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/2310
+GenericName[en_US]=
+GenericName=
+Icon=quake
+MimeType=
+Name[en_US]=Quake
+Name=Quake
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

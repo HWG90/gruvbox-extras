@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Resident Evil Requiem
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/3764200
+Icon=/home/goose/.local/share/icons/gruvbox-flat/resident-evil-requiem.svg
+Terminal=false
+Type=Application
+Categories=Game;

@@ -1,0 +1,14 @@
+# local build environments
+.venv*/
+__pycache__/
+*.pyc
+
+# Third-party source art: downloaded during development for comparison, and not
+# ours to redistribute. Re-fetchable — see NOTICE.md for the CDN URL pattern.
+sets/recolor/sources/
+sets/*/sources/*_grid.jpg
+sets/*/sources/*_hero.jpg
+
+# scratch
+*.tar.gz
+/tmp/

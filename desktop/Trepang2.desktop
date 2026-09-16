@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Trepang2
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/1164940
+Icon=/home/goose/.local/share/icons/gruvbox-flat/trepang2.svg
+Terminal=false
+Type=Application
+Categories=Game;

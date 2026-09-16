@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=METAL GEAR SOLID MASTER COLLECTION Vol.2
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/3859630
+Icon=/home/goose/.local/share/icons/gruvbox-flat/metal-gear-solid-master-collection-vol-2.svg
+Terminal=false
+Type=Application
+Categories=Game;

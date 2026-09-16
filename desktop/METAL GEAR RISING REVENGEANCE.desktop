@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=METAL GEAR RISING: REVENGEANCE
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/235460
+Icon=/home/goose/.local/share/icons/gruvbox-flat/metal-gear-rising-revengeance.svg
+Terminal=false
+Type=Application
+Categories=Game;

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=METAL GEAR SOLID: Peace Walker - Master Collection Version
+Comment=Play this game on Steam
+Exec=steam steam://rungameid/2492660
+Icon=/home/goose/.local/share/icons/gruvbox-flat/metal-gear-solid-peace-walker-master-collection-version.svg
+Terminal=false
+Type=Application
+Categories=Game;
