@@ -76,7 +76,7 @@ RIM_PATH = ("M 165.068 11.951 C 169.396 11.941 173.724 11.991 178.052 12.089 C 1
 GAMES = [
     ("beyond-citadel", 3371240, "#b8bb26", "logo"),
     ("dead-space",     1693980, "#8ec07c", "logo"),
-    ("doom-64",        1148590, "#fe8019", "icon"),
+    ("doom-64",        1148590, "#fe8019", "logo"),
     ("hades-ii",       1145350, "#d3869b", "icon"),
     ("helldivers-2",   553850,  "#fabd2f", "hd2"),
     ("metal-gear-rising-revengeance", 235460, "#fb4934", "logo"),
@@ -294,8 +294,7 @@ def drop_speckles(mask: np.ndarray, min_frac: float = 0.02) -> np.ndarray:
 # Icons whose installed art is a dark mark with only thin bright details: a colour
 # threshold keeps just the detail fragments, which turn to mud at 96px. These icons
 # carry the mark's real shape in ALPHA, so take the silhouette from there instead.
-ALPHA_ART = {1148590: 0.005}     # DOOM 64: alpha silhouette, eye sockets cut out
-                                 # (value = min blob size kept as a hole)
+ALPHA_ART = {}                   # (DOOM 64 now uses its wordmark - see GAMES)
 
 # Edge smoothing, per app. A traced edge is only as smooth as the mask it came from.
 #   ("src", r)  = blur at SOURCE resolution, before the upscale: removes the
@@ -310,7 +309,6 @@ ALPHA_ART = {1148590: 0.005}     # DOOM 64: alpha silhouette, eye sockets cut ou
 # detail survives it - small features are what gets lost.
 TRACE_LT = {
     2183900: 20,     # Space Marine 2 (bold geometric U - nothing small to lose)
-    1148590: 16,     # DOOM 64 (eye sockets are ~80px at 256, safely above this)
 }
 TRACE_LT_DEFAULT = 3.5
 
